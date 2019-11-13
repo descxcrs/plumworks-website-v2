@@ -48,6 +48,22 @@ body {
   height: 100%;
 }
 
+#icons.ui.small.images {
+  width: 420px;
+  margin: auto;
+}
+
+#icons img {
+  width: 5em;
+}
+
+#icons img.ui.image.node,
+#icons img.ui.image.express,
+#icons img.ui.image.mongo {
+  width: 4em;
+  margin: auto 0.5em;
+}
+
 div.ui.very.padded.text.container {
   font-family: "Quicksand", sans-serif;
   letter-spacing: 0.05em;
@@ -69,6 +85,14 @@ h1 {
   font-size: 2em;
   letter-spacing: 0.5em;
 }
+
+h2.icons.text {
+  font-family: "Bungee Shade", cursive;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  color: black;
+}
+
 h3 {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
