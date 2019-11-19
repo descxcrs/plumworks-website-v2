@@ -12,11 +12,35 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 4rem;
+}
+
+a .ui.about,
+a .ui.skills,
+a .ui.projects {
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  -webkit-box-shadow: 10px 5px 5px -10px #4c4c4c;
+  -moz-box-shadow: 10px 5px 5px -10px #4c4c4c;
+  box-shadow: 10px 5px 5px -10px #4c4c4c;
+}
+
 #upbutton {
   position: fixed;
-  bottom: 10px;
+  bottom: 40px;
   right: 10px;
 }
+
+/*        NAVBAR        */
 
 #menu .item {
   font-size: 1.2em;
@@ -43,18 +67,83 @@ body {
   background: none;
 }
 
+/*             ALL SECTION CONTAINERS          */
+
 .ui.fluid.container.section {
-  padding-top: 15%;
+  padding-top: 7em;
   height: 100%;
 }
 
-#icons.ui.small.images {
-  width: 420px;
+.ui.fluid.container.section.about {
+  padding-top: 13em;
+}
+
+div.ui.header.container {
+  width: 700px;
   margin: auto;
 }
 
-#icons img {
-  width: 5em;
+/*              ABOUT SECTION              */
+
+.ui.fluid.container.section.about > .ui.header.container:not(img),
+.ui.fluid.container.section.about > .ui.very.padded.text.justified.container {
+  background: #e9cbdd;
+  width: 32%;
+  text-align: justify;
+  padding: 1em;
+}
+
+.ui.about > .ui.header {
+  margin-left: 12.43em !important;
+}
+
+div.ui.very.padded.text.container {
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05em;
+  padding-top: 3%;
+  margin-left: 3em;
+  color: #4c4c4c;
+  margin-left: 14em !important;
+  width: 32% !important;
+  padding: 2em;
+}
+
+#profileimg {
+  position: absolute;
+  z-index: -1;
+  width: 25em;
+  margin-top: -6em;
+  margin-left: 20em;
+  margin-bottom: -100em;
+}
+
+h1 {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  margin-top: -0.2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+h1 #myname {
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  margin-top: -1%;
+  margin-left: 4%;
+  letter-spacing: 0.05em;
+  margin-right: 4%;
+}
+
+/*              SKILLS SECTION             */
+#icons.ui.small.images {
+  width: 420px;
+  margin: auto;
 }
 
 #icons img.ui.image.node,
@@ -64,39 +153,81 @@ body {
   margin: auto 0.5em;
 }
 
-div.ui.very.padded.text.container {
-  font-family: "Quicksand", sans-serif;
-  letter-spacing: 0.05em;
-  margin-top: 3%;
-  color: #4c4c4c;
+div.ui.list .item .content .header {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  height: 3em;
 }
 
-div.ui.header.container {
-  width: 700px;
+#icons img {
+  width: 5em;
+}
+
+div.ui.text.container.skills {
+  width: 600px;
+  padding-top: 2em;
   margin: auto;
-}
-
-img {
-  width: 100%;
-}
-
-h1 {
-  font-family: "Bungee Shade", cursive;
-  font-size: 2em;
-  letter-spacing: 0.5em;
 }
 
 h2.icons.text {
   font-family: "Bungee Shade", cursive;
   font-size: 2em;
   letter-spacing: 0.3em;
+  padding-bottom: 0.5em;
   color: black;
 }
 
-h3 {
+/*                PROJECT CARDS            */
+
+.ui.card > .content > a.header,
+.ui.cards > .card > .content > a.header {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
-  margin-top: -1%;
-  margin-left: 4%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
+}
+
+.ui.cards > .card > .content > a.header:hover {
+  font-family: "Quicksand", sans-serif;
+  color: #6646c4;
+}
+
+.ui.card > .content > div.meta,
+.ui.cards > .card > .content > div.meta {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-top: 0.5em;
+}
+
+.ui.card,
+.ui.cards > .card {
+  background: none;
+  margin: 0.875em 1.5em;
+}
+
+body .ui.cards > .card {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: justify;
+}
+
+.ui.cards a:hover {
+  color: #000;
+}
+
+/*                  FOOTER              */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: -1;
+  background: #c371a2;
+  text-align: center;
+  border: none;
+}
+
+#footer > .ui.container {
+  /* margin-bottom: 2em; */
 }
