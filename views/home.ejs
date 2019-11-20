@@ -55,8 +55,8 @@
       </div>
 
       <!-- ABOUT -->
-      <a name="about">
-        <div class="ui fluid container section about">
+      <a name="about" class="fadeinup">
+        <div class="ui fluid container section about fadein">
           <div class="ui header container">
             <img
               id="profileimg"
@@ -84,7 +84,7 @@
               building fun, interactive, intermediate level web applications in
               JavaScript with MongoDB, Express.js, Node.js, and (of course)
               Google. I am slowly building my portfolio, in the mean time, check
-              out my socials.
+              out my projects.
             </p>
           </div>
         </div>
@@ -92,108 +92,80 @@
 
       <!-- SKILLS -->
       <a name="skills">
-        <div class="ui fluid container section">
-          <div class="ui text container">
-            <h2 class="icons text">What I know and what I'm learning...</h2>
-            <!-- ICONS -->
-            <div class="ui small images" id="icons">
-              <img class="ui image" src="images/html5.jpg" alt="HTML5" />
-              <img class="ui image" src="images/css.png" alt="CSS" />
-              <img class="ui image" src="images/js.png" alt="JavaScript" />
-              <img
-                class="ui image node"
-                src="images/nodejs.svg"
-                alt="Node.js"
-              />
-              <img
-                class="ui image express"
-                src="images/expressjs.png"
-                alt="Express.js"
-              />
-              <img
-                class="ui image mongo"
-                src="images/mongodb.png"
-                alt="MongoDB"
-              />
-            </div>
-          </div>
-
-          <!-- HORIZONTAL LIST OF SKILLS -->
+        <div class="ui fluid container section skills">
           <div class="ui text container skills">
-            <div class="ui relaxed horizontal list">
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">HTML 5</div>
-                  <div class="description">Intermediate</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">CSS 3</div>
-                  <div class="description">Intermediate</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">JavaScript</div>
-                  <div class="description">Intermediate ES5, learning ES6</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">Node.js</div>
-                  <div class="description">Beginner</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">Express.js</div>
-                  Beginner
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">MongoDB</div>
-                  <div class="description">Beginner</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/checkicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">Passport.js</div>
-                  <div class="description">Beginner</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/flagicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">React.js</div>
-                  <div class="description">Beginner</div>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="images/flagicon.png" class="ui avatar image" />
-                <div class="content">
-                  <div class="header">SQL</div>
-                  <div class="description">Beginner</div>
-                </div>
-              </div>
-            </div>
+            <h4 class="ui horizontal divider header">
+              Skills and Future Goals
+            </h4>
           </div>
+          <table class="ui selectable inverted table">
+            <thead class="table header">
+              <tr>
+                <th>Skills</th>
+                <th>Skill Level</th>
+                <th class="right aligned">Next Steps</th>
+              </tr>
+            </thead>
+            <tbody class="table body">
+              <tr>
+                <td>HTML5</td>
+                <td>Intermediate</td>
+                <td class="right aligned">Practice semantic tagging</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+                <td class="right aligned">Learn CSS Grid and Flexbox</td>
+              </tr>
+              <tr>
+                <td>JavaScript 5</td>
+                <td>Intermediate</td>
+                <td class="right aligned">Learn JS6, learn promises</td>
+              </tr>
+              <tr>
+                <td>Node</td>
+                <td>Beginner</td>
+                <td class="right aligned">
+                  Complete Node.js course
+                </td>
+              </tr>
+              <tr>
+                <td>Express.js</td>
+                <td>Beginner</td>
+                <td class="right aligned">
+                  Keep practicing and creating projects through Node.js course
+                </td>
+              </tr>
+              <tr>
+                <td>MongoDB</td>
+                <td>Beginner</td>
+                <td class="right aligned">
+                  Keep practicing and creating projects through Node.js course
+                </td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td>Beginner</td>
+                <td class="right aligned">
+                  Begin course after completing Node.js course
+                </td>
+              </tr>
+              <tr>
+                <td>Passport.js</td>
+                <td>Beginner</td>
+                <td class="right aligned">
+                  Keep practicing authentication
+                </td>
+              </tr>
+              <tr>
+                <td>React.js</td>
+                <td>Beginner</td>
+                <td class="right aligned">
+                  Start learning React after completing courses on Node.js & SQL
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </a>
 
@@ -334,6 +306,10 @@
       <div class="ui footer segment form-page bottom" id="footer">
         <div class="ui container">
           Plumworks. 2019.
+
+          <!-- <a target="_blank" href="/icons/set/medium-logo">Medium</a>,
+          <a target="_blank" href="/icons/set/github-2">Octocat</a> and other
+          icons by <a target="_blank" href="https://icons8.com">Icons8</a> -->
         </div>
       </div>
     </footer>

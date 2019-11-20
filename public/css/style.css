@@ -21,9 +21,9 @@ body {
   padding-bottom: 4rem;
 }
 
-a .ui.about,
-a .ui.skills,
-a .ui.projects {
+a > .ui.about,
+a > .ui.skills,
+a > .ui.projects {
   min-height: 100vh;
 }
 
@@ -40,7 +40,23 @@ img {
   right: 10px;
 }
 
-/*        NAVBAR        */
+.fadein {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.fadeinup {
+  animation-name: fadeInUp;
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+/***************************************************
+                       Navbar
+****************************************************/
 
 #menu .item {
   font-size: 1.2em;
@@ -67,7 +83,9 @@ img {
   background: none;
 }
 
-/*             ALL SECTION CONTAINERS          */
+/***************************************************
+              All Section Containers
+****************************************************/
 
 .ui.fluid.container.section {
   padding-top: 7em;
@@ -83,7 +101,9 @@ div.ui.header.container {
   margin: auto;
 }
 
-/*              ABOUT SECTION              */
+/***************************************************
+                     About Section
+****************************************************/
 
 .ui.fluid.container.section.about > .ui.header.container:not(img),
 .ui.fluid.container.section.about > .ui.very.padded.text.justified.container {
@@ -98,14 +118,16 @@ div.ui.header.container {
 }
 
 div.ui.very.padded.text.container {
+  min-width: 200px !important;
   font-family: "Quicksand", sans-serif;
+  font-size: 1em;
   letter-spacing: 0.05em;
-  padding-top: 3%;
+  margin-top: -1em;
   margin-left: 3em;
   color: #4c4c4c;
-  margin-left: 14em !important;
-  width: 32% !important;
-  padding: 2em;
+  margin-left: 16em !important;
+  width: 31.99% !important;
+  padding: 2.1em !important;
 }
 
 #profileimg {
@@ -121,28 +143,31 @@ h1 {
   font-family: "Rubik Mono One", sans-serif;
   font-size: 2em;
   letter-spacing: 0.2em;
-  margin-top: -0.2em;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
-}
-
-h1 #myname {
-  letter-spacing: 0.1em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
-  margin-top: -1%;
-  margin-left: 4%;
+  margin-top: 2%;
+  margin-left: 5%;
   letter-spacing: 0.05em;
-  margin-right: 4%;
+  margin-right: 5%;
 }
 
-/*              SKILLS SECTION             */
-#icons.ui.small.images {
-  width: 420px;
+button,
+input {
+  width: 3em;
+}
+
+/********************************************************
+                      Skills Section
+*********************************************************/
+/* #icons.ui.small.images {
+  width: 83%;
   margin: auto;
 }
 
@@ -150,35 +175,52 @@ h3 {
 #icons img.ui.image.express,
 #icons img.ui.image.mongo {
   width: 4em;
-  margin: auto 0.5em;
-}
-
-div.ui.list .item .content .header {
-  font-family: "Anton", sans-serif;
-  font-size: 1.5em;
-  padding-top: 1.5em;
-  height: 3em;
-}
-
+  margin: auto 1.6em;
+} */
+/* 
 #icons img {
   width: 5em;
-}
+  box-shadow: none;
+  margin: auto 1.2em;
+  padding-left: 1em;
+} */
 
 div.ui.text.container.skills {
-  width: 600px;
+  width: 800px;
   padding-top: 2em;
   margin: auto;
 }
 
-h2.icons.text {
-  font-family: "Bungee Shade", cursive;
+h4.ui.header {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.7em;
+}
+
+table > .table.header {
+  font-family: "Concert One", cursive;
+  font-size: 1.2em;
+}
+
+table > .table.body {
+  font-family: "Quicksand", sans-serif;
+}
+
+table.ui.selectable.inverted.table {
+  width: 70%;
+  margin: 3em auto;
+}
+
+/* h2.icons.text {
+  font-family: "Rubik Mono One", sans-serif;
   font-size: 2em;
   letter-spacing: 0.3em;
   padding-bottom: 0.5em;
   color: black;
-}
+} */
 
-/*                PROJECT CARDS            */
+/***************************************************
+                    Project Cards
+****************************************************/
 
 .ui.card > .content > a.header,
 .ui.cards > .card > .content > a.header {
@@ -216,7 +258,9 @@ body .ui.cards > .card {
   color: #000;
 }
 
-/*                  FOOTER              */
+/***************************************************
+                        Footer
+****************************************************/
 #footer {
   position: absolute;
   bottom: 0;
@@ -228,6 +272,28 @@ body .ui.cards > .card {
   border: none;
 }
 
-#footer > .ui.container {
-  /* margin-bottom: 2em; */
+/***************************************************
+                        Keyframes
+****************************************************/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
