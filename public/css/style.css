@@ -11,33 +11,27 @@ body {
     #d8acb8
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-#page-container {
+/* 
+.page-container {
   position: relative;
   min-height: 100vh;
 }
 
-#content-wrap {
+.content-wrap {
   padding-bottom: 4rem;
-}
+} */
 
-a > .ui.about,
+/* a > .ui.about,
 a > .ui.skills,
 a > .ui.projects {
   min-height: 100vh;
-}
+} */
 
 img {
   width: 100%;
   -webkit-box-shadow: 10px 5px 5px -10px #4c4c4c;
   -moz-box-shadow: 10px 5px 5px -10px #4c4c4c;
   box-shadow: 10px 5px 5px -10px #4c4c4c;
-}
-
-#upbutton {
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
 }
 
 .fadein {
@@ -58,7 +52,7 @@ img {
                        Navbar
 ****************************************************/
 
-#menu .item {
+/* #menu .item {
   font-size: 1.2em;
   font-family: "Quicksand", sans-serif;
   color: whitesmoke;
@@ -81,20 +75,20 @@ img {
 
 .ui.menu .item:before {
   background: none;
-}
+} */
 
 /***************************************************
               All Section Containers
 ****************************************************/
 
-.ui.fluid.container.section {
+/* .ui.fluid.container.section {
   padding-top: 7em;
   height: 100%;
-}
+} */
 
-.ui.fluid.container.section.about {
+/* .ui.fluid.container.section.about {
   padding-top: 13em;
-}
+} */
 
 div.ui.header.container {
   width: 700px;
@@ -105,19 +99,20 @@ div.ui.header.container {
                      About Section
 ****************************************************/
 
-.ui.fluid.container.section.about > .ui.header.container:not(img),
+/* .ui.fluid.container.section.about > .ui.header.container:not(img),
 .ui.fluid.container.section.about > .ui.very.padded.text.justified.container {
   background: #e9cbdd;
   width: 32%;
   text-align: justify;
   padding: 1em;
-}
+} */
 
 .ui.about > .ui.header {
   margin-left: 12.43em !important;
 }
 
 div.ui.very.padded.text.container {
+  background: #e9cbdd;
   min-width: 200px !important;
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
@@ -158,32 +153,34 @@ h3 {
   margin-right: 5%;
 }
 
-button,
+.ui.header.container > h1 {
+  background: #e9cbdd;
+  min-width: 200px !important;
+  width: 60.2%;
+  margin-left: -12.2%;
+  margin-top: -2%;
+  margin-bottom: -2%;
+  padding-left: 1.6em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.ui.header.container > h3 {
+  background: #e9cbdd;
+  min-width: 200px !important;
+  width: 60.2%;
+  margin-left: -12.2%;
+  margin-top: -3%;
+  padding: 2.5em;
+}
+/* button,
 input {
   width: 3em;
-}
+} */
 
 /********************************************************
                       Skills Section
 *********************************************************/
-/* #icons.ui.small.images {
-  width: 83%;
-  margin: auto;
-}
-
-#icons img.ui.image.node,
-#icons img.ui.image.express,
-#icons img.ui.image.mongo {
-  width: 4em;
-  margin: auto 1.6em;
-} */
-/* 
-#icons img {
-  width: 5em;
-  box-shadow: none;
-  margin: auto 1.2em;
-  padding-left: 1em;
-} */
 
 div.ui.text.container.skills {
   width: 800px;
@@ -209,14 +206,6 @@ table.ui.selectable.inverted.table {
   width: 70%;
   margin: 3em auto;
 }
-
-/* h2.icons.text {
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: 2em;
-  letter-spacing: 0.3em;
-  padding-bottom: 0.5em;
-  color: black;
-} */
 
 /***************************************************
                     Project Cards

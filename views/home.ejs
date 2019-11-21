@@ -5,6 +5,8 @@
   <title>Plumworks</title>
   <meta name="description" content="Hey there! Enjoy your stay." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Semantic UI -->
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     crossorigin="anonymous"
@@ -14,6 +16,9 @@
     href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
   />
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+  <!-- Fullpage CSS-->
+  <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
 
   <!-- FONTS -->
 
@@ -27,35 +32,32 @@
 </head>
 
 <body>
-  <div id="page-container">
-    <div id="content-wrap">
-      <div class="ui fluid top borderless four item fixed menu" id="menu">
-        <a href="/" class="header item">
-          Plumworks
-        </a>
-        <a href="#about" class="item">
-          About
-        </a>
-        <a href="#skills" class="item">
-          Skills
-        </a>
-        <a href="#projects" class="item">
-          Projects
-        </a>
-      </div>
+  <!-- <div id="page-container">
+    <div id="content-wrap"> -->
+  <!-- <ul id="menu">
+    <div class="ui fluid top borderless four item fixed menu">
+      <a href="/" class="header item">
+        Plumworks
+      </a>
+      <li data-menuanchor="s1" class="active">
+        <a href="#s1">About</a>
+      </li>
 
-      <!-- UP BUTTON -->
+      <li data-menuanchor="s2">
+        <a href="#s2">Skills</a>
+      </li>
 
-      <div id="upbutton">
-        <a href="/">
-          <button class="circular ui icon button">
-            <i class="icon angle double up"></i>
-          </button>
-        </a>
-      </div>
+      <li data-menuanchor="s3">
+        <a href="#s3">Projects</a>
+      </li>
+    </div>
+  </ul> -->
 
-      <!-- ABOUT -->
-      <a name="about" class="fadeinup">
+  <div id="fullpage">
+    <!-- ABOUT -->
+    <section class="section active" id="section0">
+      <a name="section1">
+        <!-- class="section" id="section0" -->
         <div class="ui fluid container section about fadein">
           <div class="ui header container">
             <img
@@ -89,9 +91,11 @@
           </div>
         </div>
       </a>
+    </section>
 
-      <!-- SKILLS -->
-      <a name="skills">
+    <!-- SKILLS -->
+    <section class="section" id="section1">
+      <a name="section2">
         <div class="ui fluid container section skills">
           <div class="ui text container skills">
             <h4 class="ui horizontal divider header">
@@ -168,9 +172,12 @@
           </table>
         </div>
       </a>
+    </section>
 
-      <!-- PROJECTS -->
-      <a name="projects">
+    <!-- PROJECTS -->
+    <section class="section" id="section2">
+      <!-- class="section" id="section2" -->
+      <a name="section3">
         <div class="ui fluid container section">
           <div class="ui cards centered borderless">
             <!-- BATTLESHIP CARD -->
@@ -297,24 +304,30 @@
                 </a>
               </div>
             </div>
+            <!-- .fluid.container.section -->
           </div>
+          <!-- ui fluid container section -->
         </div>
       </a>
-    </div>
-    <!-- content wrap -->
-    <footer>
-      <div class="ui footer segment form-page bottom" id="footer">
-        <div class="ui container">
-          Plumworks. 2019.
+    </section>
 
-          <!-- <a target="_blank" href="/icons/set/medium-logo">Medium</a>,
-          <a target="_blank" href="/icons/set/github-2">Octocat</a> and other
-          icons by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-        </div>
-      </div>
-    </footer>
+    <!-- #fullpage -->
   </div>
-  <!-- <page container -->
 
-  <script src="" async defer></script>
+  <!-- <footer>
+        <div class="ui footer segment form-page bottom" id="footer">
+          <div class="ui container">
+            Plumworks. 2019.
+
+          </div>
+        </div>
+      </footer> -->
+
+  <!-- #content-wrap -->
+  <!-- </div> -->
+
+  <!-- #page-container -->
+  <!-- </div> -->
+  <script type="text/javascript" src="script/fullpage.js"></script>
+  <script type="text/javascript" src="script/script.js"></script>
 </body>
