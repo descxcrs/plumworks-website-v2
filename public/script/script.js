@@ -2,7 +2,7 @@ new fullpage("#fullpage", {
   licenseKey: "FB0E5E4D-55764AD6-AB5CBE48-0642FA07",
   //   autoScrolling: true,
   //   keyboardScrolling: true,
-  //   paddingTop: "50px",
+  paddingTop: "2em",
   anchors: ["s1", "s2", "s3"],
   navigation: true,
   navigationPosition: "right",

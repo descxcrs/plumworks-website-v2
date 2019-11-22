@@ -1,37 +1,15 @@
 body {
-  background: #ddd6f3; /* fallback for old browsers */
+  background: #5f1223; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #dda0dd,
-    #d8acb8
+    to top,
+    #5f1223,
+    #9f1e3a
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #dda0dd,
-    #d8acb8
+    to top,
+    #5f1223,
+    #9f1e3a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-/* 
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-.content-wrap {
-  padding-bottom: 4rem;
-} */
-
-/* a > .ui.about,
-a > .ui.skills,
-a > .ui.projects {
-  min-height: 100vh;
-} */
-
-img {
-  width: 100%;
-  -webkit-box-shadow: 10px 5px 5px -10px #4c4c4c;
-  -moz-box-shadow: 10px 5px 5px -10px #4c4c4c;
-  box-shadow: 10px 5px 5px -10px #4c4c4c;
 }
 
 .fadein {
@@ -52,24 +30,19 @@ img {
                        Navbar
 ****************************************************/
 
-/* #menu .item {
-  font-size: 1.2em;
-  font-family: "Quicksand", sans-serif;
-  color: whitesmoke;
-  padding-top: 1%;
-  padding-bottom: 1.2%;
-}
-
-#menu .header.item {
+/* 
+#header .header.item {
   font-size: 2em;
   font-weight: 700;
   letter-spacing: 0.2em;
   padding-left: 10%;
   font-family: "Bungee Shade", cursive;
+  color: white;
+  height: 2em;
 }
 
 .ui.menu {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   border-style: none;
 }
 
@@ -81,49 +54,30 @@ img {
               All Section Containers
 ****************************************************/
 
-/* .ui.fluid.container.section {
-  padding-top: 7em;
-  height: 100%;
-} */
-
-/* .ui.fluid.container.section.about {
-  padding-top: 13em;
-} */
-
+/* 
 div.ui.header.container {
   width: 700px;
   margin: auto;
-}
+} */
 
 /***************************************************
                      About Section
 ****************************************************/
+/* 
 
-/* .ui.fluid.container.section.about > .ui.header.container:not(img),
-.ui.fluid.container.section.about > .ui.very.padded.text.justified.container {
+.ui.fluid.container.section.about.fadein {
   background: #e9cbdd;
-  width: 32%;
-  text-align: justify;
-  padding: 1em;
-} */
-
-.ui.about > .ui.header {
-  margin-left: 12.43em !important;
+  width: 30% !important;
+  margin-left: -12.2%;
+  margin-top: -3%;
+  padding: 2.5em;
 }
 
-div.ui.very.padded.text.container {
-  background: #e9cbdd;
-  min-width: 200px !important;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  margin-top: -1em;
-  margin-left: 3em;
-  color: #4c4c4c;
-  margin-left: 16em !important;
-  width: 31.99% !important;
-  padding: 2.1em !important;
+.ui.text.container {
+  max-width: none;
+  width: 100%;
 }
+
 
 #profileimg {
   position: absolute;
@@ -151,38 +105,13 @@ h3 {
   margin-left: 5%;
   letter-spacing: 0.05em;
   margin-right: 5%;
-}
-
-.ui.header.container > h1 {
-  background: #e9cbdd;
-  min-width: 200px !important;
-  width: 60.2%;
-  margin-left: -12.2%;
-  margin-top: -2%;
-  margin-bottom: -2%;
-  padding-left: 1.6em;
-  padding-right: 1em;
-  padding-top: 1em;
-}
-
-.ui.header.container > h3 {
-  background: #e9cbdd;
-  min-width: 200px !important;
-  width: 60.2%;
-  margin-left: -12.2%;
-  margin-top: -3%;
-  padding: 2.5em;
-}
-/* button,
-input {
-  width: 3em;
 } */
 
 /********************************************************
                       Skills Section
 *********************************************************/
 
-div.ui.text.container.skills {
+/* div.ui.text.container.skills {
   width: 800px;
   padding-top: 2em;
   margin: auto;
@@ -205,11 +134,18 @@ table > .table.body {
 table.ui.selectable.inverted.table {
   width: 70%;
   margin: 3em auto;
-}
+} */
 
 /***************************************************
                     Project Cards
 ****************************************************/
+
+img {
+  width: 100%;
+  -webkit-box-shadow: 10px 5px 5px -10px #4c4c4c;
+  -moz-box-shadow: 10px 5px 5px -10px #4c4c4c;
+  box-shadow: 10px 5px 5px -10px #4c4c4c;
+}
 
 .ui.card > .content > a.header,
 .ui.cards > .card > .content > a.header {
