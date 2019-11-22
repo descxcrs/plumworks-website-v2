@@ -10,6 +10,7 @@ body {
     #5f1223,
     #9f1e3a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Montserrat", sans-serif;
 }
 
 .fadein {
@@ -30,110 +31,89 @@ body {
                        Navbar
 ****************************************************/
 
-/* 
-#header .header.item {
-  font-size: 2em;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  padding-left: 10%;
-  font-family: "Bungee Shade", cursive;
-  color: white;
-  height: 2em;
-}
-
-.ui.menu {
-  background: rgba(0, 0, 0, 0.8);
-  border-style: none;
-}
-
-.ui.menu .item:before {
-  background: none;
-} */
-
 /***************************************************
               All Section Containers
 ****************************************************/
 
-/* 
-div.ui.header.container {
-  width: 700px;
-  margin: auto;
-} */
-
 /***************************************************
                      About Section
 ****************************************************/
-/* 
 
-.ui.fluid.container.section.about.fadein {
-  background: #e9cbdd;
-  width: 30% !important;
-  margin-left: -12.2%;
-  margin-top: -3%;
-  padding: 2.5em;
-}
-
-.ui.text.container {
-  max-width: none;
-  width: 100%;
-}
-
-
-#profileimg {
-  position: absolute;
-  z-index: -1;
-  width: 25em;
-  margin-top: -6em;
-  margin-left: 20em;
-  margin-bottom: -100em;
-}
-
-h1 {
-  font-family: "Rubik Mono One", sans-serif;
+h1.ui.header {
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: -5em;
+  margin-left: 3em;
+  margin-bottom: 4em;
   font-size: 2em;
   letter-spacing: 0.2em;
-  margin-top: 0.5em;
-  margin-left: 1em;
-  margin-right: 1.2em;
-  margin-bottom: 0.5em;
+  color: #fef9fa;
 }
 
-h3 {
-  font-family: "Quicksand", sans-serif;
+h3.ui.header {
+  font-family: "Montserrat", sans-serif;
+  /* text-transform: uppercase; */
+  font-weight: 400;
+  margin-top: -5em;
+  margin-left: 6em;
+  margin-bottom: 4em;
   font-size: 1em;
-  margin-top: 2%;
-  margin-left: 5%;
-  letter-spacing: 0.05em;
-  margin-right: 5%;
+  letter-spacing: 0.2em;
+  color: #fef9fa;
+}
+
+.ui.container ul#info {
+  list-style: none;
+  margin-left: 1em;
+  font-family: "Montserrat", sans-serif;
+  color: #fef9fa;
+}
+
+.ui.container ul#info li.skills::before {
+  content: none;
+}
+
+.ui.container ul#info li.skills {
+  text-transform: uppercase;
+}
+
+.ui.container ul#info li {
+  height: 2em;
+  line-height: 1em;
+  padding-top: 0.5em;
+}
+
+.ui.container ul#info li::before {
+  content: "\2022";
+  color: #fef9fa;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  width: 2em;
+  margin-top: -0.1em;
+  margin-left: -0.5em;
+  font-size: 3.5em;
+}
+
+/* ul#email li {
+  height: 2em;
+  line-height: 1em;
+  padding-top: 0.5em;
 } */
 
-/********************************************************
-                      Skills Section
-*********************************************************/
-
-/* div.ui.text.container.skills {
-  width: 800px;
-  padding-top: 2em;
-  margin: auto;
-}
-
-h4.ui.header {
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: 1.7em;
-}
-
-table > .table.header {
-  font-family: "Concert One", cursive;
-  font-size: 1.2em;
-}
-
-table > .table.body {
-  font-family: "Quicksand", sans-serif;
-}
-
-table.ui.selectable.inverted.table {
-  width: 70%;
-  margin: 3em auto;
+/* ul#email li::before {
+  content: "\2022";
+  color: #fef9fa;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  width: 0.5em;
+  margin-top: -0.1em;
+  margin-left: -0.5em;
+  font-size: 3.4em;
 } */
 
 /***************************************************
@@ -142,9 +122,9 @@ table.ui.selectable.inverted.table {
 
 img {
   width: 100%;
-  -webkit-box-shadow: 10px 5px 5px -10px #4c4c4c;
-  -moz-box-shadow: 10px 5px 5px -10px #4c4c4c;
-  box-shadow: 10px 5px 5px -10px #4c4c4c;
+  -webkit-box-shadow: 10px 5px 5px -7px #2b0810;
+  -moz-box-shadow: 10px 5px 5px -7px #2b0810;
+  box-shadow: 10px 5px 5px -7px #2b0810;
 }
 
 .ui.card > .content > a.header,
@@ -152,11 +132,12 @@ img {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
   letter-spacing: 0.15em;
+  color: #fef9fa;
 }
 
 .ui.cards > .card > .content > a.header:hover {
   font-family: "Quicksand", sans-serif;
-  color: #6646c4;
+  color: #8e1b34;
 }
 
 .ui.card > .content > div.meta,
@@ -183,6 +164,88 @@ body .ui.cards > .card {
   color: #000;
 }
 
+/********************************************************
+                      Contact Section
+*********************************************************/
+
+h2.info.ui.header {
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: -5em;
+  margin-left: -5em;
+  margin-bottom: 4em;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  color: #fef9fa;
+}
+
+.ui.contact img.contact.image {
+  position: absolute;
+  right: 8%;
+  width: 35%;
+  box-shadow: none;
+}
+
+#email,
+#infoList {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+#email a {
+  color: #fef9fa;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+#infoList a {
+  color: #5f1223;
+  font-size: 1.3em;
+}
+
+#email {
+  margin-bottom: 4em;
+}
+
+#infoList {
+  margin-left: 2.3em;
+  margin-top: 2em;
+  margin-bottom: -3em;
+}
+
+.ui.icon.button,
+.ui.icon.buttons .button {
+  padding-bottom: 0.3em;
+  padding-right: 0.3em;
+  padding-left: 0.5em;
+  padding-top: 0.6em;
+  margin-right: 1em;
+}
+
+ul#email {
+  list-style: none;
+  margin-left: 1em;
+}
+
+ul#email li {
+  height: 2em;
+  line-height: 1em;
+  padding-top: 0.5em;
+}
+
+ul#email li::before {
+  content: "\2022";
+  color: #fef9fa;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  width: 0.5em;
+  margin-top: -0.1em;
+  margin-left: -0.5em;
+  font-size: 3.4em;
+}
 /***************************************************
                         Footer
 ****************************************************/
