@@ -69,7 +69,6 @@ h2.ui.header {
 
 h3.ui.header {
   font-family: "Montserrat", sans-serif;
-  /* text-transform: uppercase; */
   font-weight: 400;
   margin-top: -5em;
   margin-left: 6em;
@@ -157,13 +156,12 @@ body .ui.cards > .card {
 
 #section2 .ui.fluid.container.contact {
   width: 100% !important;
-  margin-left: auto !important;
+  margin-left: -3% !important;
 }
 
 #contactInfo h2.info.ui.header {
   width: 100%;
   font-size: 2em;
-  margin-left: auto;
 }
 
 h2.info.ui.header {
@@ -333,14 +331,10 @@ ul#email li::before {
     margin-left: auto;
     margin-bottom: none !important;
   }
+
   ul#email {
     font-size: 0.8em;
-    /* margin-left: auto%; */
   }
-
-  /* #infoList {
-    margin-left: auto%;
-  } */
 
   .ui.contact img.contact.image {
     left: 25%;
@@ -362,7 +356,6 @@ ul#email li::before {
   .h3.header > h3.ui.header {
     width: 70%;
     font-size: 0.8em;
-    /* margin-top: 10em; */
   }
 
   #aboutMeBg {
