@@ -296,9 +296,26 @@ ul#email li::before {
 
 @media only screen and (max-width: 550px) {
   /* About */
-  #section0 > div.ui.fluid.container.about.fadein > div.ui.header.container {
+
+  #section0 .fp-tableCell {
+    width: 100%;
+  }
+
+  #section0 .fp-tableCell div.ui.fluid.container.about.fadein h1.ui.header {
     margin-top: 2em !important;
     margin-left: auto !important;
+    margin-bottom: 0;
+    width: 90%;
+  }
+  #section0 .fp-tableCell div.ui.fluid.container.about.fadein h2.ui.header {
+    margin-top: 2em !important;
+    margin-left: auto !important;
+    margin-top: 1em !important;
+    width: 70%;
+  }
+  #section0 .fp-tableCell div.ui.fluid.container.about.fadein h3.ui.header {
+    margin-top: 2em !important;
+    margin-left: 2% !important;
   }
 
   .h3.header > h3.ui.header {
@@ -307,11 +324,11 @@ ul#email li::before {
     /* margin-top: 10em; */
   }
 
-  #section0 > #aboutMeBg {
+  #section0 .fp-tableCell img#aboutMeBg {
     position: absolute;
-    top: 55%;
-    left: 25%;
-    width: 60%;
+    top: 10%;
+    left: 15% !important;
+    width: 80%;
   }
 
   /* Contact */

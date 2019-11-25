@@ -12,5 +12,5 @@ app.get("/", function(req, res) {
 });
 
 app.listen(process.env.PORT, process.env.IP, function() {
-  console.log("Plumworks is ON!");
+  console.log("Plumworks is ON");
 });
