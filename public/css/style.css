@@ -294,6 +294,19 @@ ul#email li::before {
                 Responsive Media Queries
 ****************************************************/
 
+@media only screen and (max-width: 400px) {
+  /* About */
+
+  #section0 .fp-tableCell div.ui.fluid.container.about.fadein h1.ui.header {
+    font-size: 1.2em;
+    width: 83% !important;
+  }
+
+  #section0 .fp-tableCell div.ui.fluid.container.about.fadein h2.ui.header {
+    width: 80% !important;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   /* About */
 
