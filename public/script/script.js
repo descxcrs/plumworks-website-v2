@@ -6,5 +6,5 @@ var myFullpage = new fullpage("#fullpage", {
   anchors: ["about", "projects", "contact"],
   navigation: true,
   navigationPosition: "right",
-  navigationTooltips: ["first page", "second page", "third page"]
+  navigationTooltips: ["About", "Projects", "Contact"]
 });

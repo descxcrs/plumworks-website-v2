@@ -1,14 +1,13 @@
 body {
-  background: #5f1223; /* fallback for old browsers */
+  background: #fafafa; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #5f1223,
-    #9f1e3a
+    #fafafa,
+    #f7f7f7
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #5f1223,
-    #9f1e3a
+    #f7f7f7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Montserrat", sans-serif;
 }
@@ -28,27 +27,44 @@ body {
 }
 
 /***************************************************
-                       Navbar
-****************************************************/
-
-/***************************************************
-              All Section Containers
-****************************************************/
-
-/***************************************************
                      About Section
 ****************************************************/
 
+#aboutMeBg {
+  position: absolute;
+  width: 70%;
+  box-shadow: none;
+  top: 6%;
+  left: 30%;
+  z-index: -1;
+  -webkit-filter: drop-shadow(3px 3px 4px rgba(191, 191, 191, 0.7));
+  filter: drop-shadow(3px 3px 4px rgba(191, 191, 191, 0.7));
+}
+
 h1.ui.header {
-  font-family: "Fredoka One", cursive;
+  font-family: "Notable";
   text-transform: uppercase;
   font-weight: 400;
-  margin-top: -5em;
+  margin-top: -1em !important;
   margin-left: 3em;
-  margin-bottom: 4em;
+  margin-bottom: 0;
   font-size: 2em;
   letter-spacing: 0.2em;
-  color: #fef9fa;
+  color: #f09696;
+  text-shadow: 2px 2px 4px #bfbfbf;
+}
+
+h2.ui.header {
+  font-family: "Yeseva One";
+  text-transform: lowercase;
+  font-weight: 400;
+  margin-top: 0 !important;
+  margin-left: 10em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: #cebeef;
+  text-shadow: 2px 2px 4px #bfbfbf;
 }
 
 h3.ui.header {
@@ -60,61 +76,21 @@ h3.ui.header {
   margin-bottom: 4em;
   font-size: 1em;
   letter-spacing: 0.2em;
-  color: #fef9fa;
+  color: #535353;
+  text-shadow: 2px 2px 5px #bfbfbf;
 }
 
-.ui.container ul#info {
-  list-style: none;
-  margin-left: 1em;
-  font-family: "Montserrat", sans-serif;
-  color: #fef9fa;
+.ui.text.container#aboutMe {
+  width: 44%;
 }
 
-.ui.container ul#info li.skills::before {
-  content: none;
+#aboutMe .ui.text.container {
+  padding-left: 1em !important;
 }
 
-.ui.container ul#info li.skills {
-  text-transform: uppercase;
+.h3.header h3.ui.header {
+  width: 30%;
 }
-
-.ui.container ul#info li {
-  height: 2em;
-  line-height: 1em;
-  padding-top: 0.5em;
-}
-
-.ui.container ul#info li::before {
-  content: "\2022";
-  color: #fef9fa;
-  font-weight: bold;
-  display: inline-block;
-  position: absolute;
-  text-align: left;
-  width: 2em;
-  margin-top: -0.1em;
-  margin-left: -0.5em;
-  font-size: 3.5em;
-}
-
-/* ul#email li {
-  height: 2em;
-  line-height: 1em;
-  padding-top: 0.5em;
-} */
-
-/* ul#email li::before {
-  content: "\2022";
-  color: #fef9fa;
-  font-weight: bold;
-  display: inline-block;
-  position: absolute;
-  text-align: left;
-  width: 0.5em;
-  margin-top: -0.1em;
-  margin-left: -0.5em;
-  font-size: 3.4em;
-} */
 
 /***************************************************
                     Project Cards
@@ -122,9 +98,9 @@ h3.ui.header {
 
 img {
   width: 100%;
-  -webkit-box-shadow: 10px 5px 5px -7px #2b0810;
-  -moz-box-shadow: 10px 5px 5px -7px #2b0810;
-  box-shadow: 10px 5px 5px -7px #2b0810;
+  -webkit-box-shadow: 10px 5px 5px -7px #bfbfbf;
+  -moz-box-shadow: 10px 5px 5px -7px #bfbfbf;
+  box-shadow: 10px 5px 5px -7px #bfbfbf;
 }
 
 .ui.card > .content > a.header,
@@ -132,12 +108,13 @@ img {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
   letter-spacing: 0.15em;
-  color: #fef9fa;
+  color: #f09696;
+  text-shadow: 2px 2px 4px #bfbfbf;
 }
 
 .ui.cards > .card > .content > a.header:hover {
   font-family: "Quicksand", sans-serif;
-  color: #8e1b34;
+  color: #f5baba;
 }
 
 .ui.card > .content > div.meta,
@@ -146,6 +123,8 @@ img {
   font-weight: 600;
   letter-spacing: 0.1em;
   margin-top: 0.5em;
+  text-transform: lowercase;
+  text-shadow: 2px 2px 4px #bfbfbf;
 }
 
 .ui.card,
@@ -158,50 +137,76 @@ body .ui.cards > .card {
   -webkit-box-shadow: none;
   box-shadow: none;
   text-align: justify;
+  text-shadow: 2px 2px 4px #bfbfbf;
 }
 
 .ui.cards a:hover {
   color: #000;
 }
 
+.extra.content > a#extra1:hover,
+.extra.content > a#extra2:hover,
+.extra.content > a#extra3:hover,
+.extra.content > a#extra4:hover {
+  color: #f5baba;
+}
+
 /********************************************************
                       Contact Section
 *********************************************************/
 
+#section2 .ui.fluid.container.contact {
+  width: 100% !important;
+  margin-left: auto !important;
+}
+
+#contactInfo h2.info.ui.header {
+  width: 100%;
+  font-size: 2em;
+  margin-left: auto;
+}
+
 h2.info.ui.header {
-  font-family: "Fredoka One", cursive;
+  font-family: "Quicksand";
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: -5em;
+  padding-top: -5em;
   margin-left: -5em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   font-size: 2em;
   letter-spacing: 0.2em;
-  color: #fef9fa;
+  color: #cebeef;
 }
 
 .ui.contact img.contact.image {
   position: absolute;
-  right: 8%;
-  width: 35%;
+  z-index: -1;
+  top: 25%;
+  right: -4%;
+  width: 50%;
   box-shadow: none;
+  -webkit-filter: drop-shadow(3px 3px 4px rgba(191, 191, 191, 0.7));
+  filter: drop-shadow(3px 3px 4px rgba(191, 191, 191, 0.7));
 }
 
 #email,
 #infoList {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 4px #bfbfbf;
 }
 
 #email a {
-  color: #fef9fa;
+  color: #8e8e8e;
   font-size: 1em;
   letter-spacing: 0.1em;
+  color: #535353;
 }
 
 #infoList a {
   color: #5f1223;
   font-size: 1.3em;
+  color: #535353;
 }
 
 #email {
@@ -221,6 +226,7 @@ h2.info.ui.header {
   padding-left: 0.5em;
   padding-top: 0.6em;
   margin-right: 1em;
+  text-shadow: 2px 2px 4px #bfbfbf;
 }
 
 ul#email {
@@ -236,7 +242,7 @@ ul#email li {
 
 ul#email li::before {
   content: "\2022";
-  color: #fef9fa;
+  color: #8e8e8e;
   font-weight: bold;
   display: inline-block;
   position: absolute;
@@ -283,5 +289,164 @@ ul#email li::before {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+/***************************************************
+                Responsive Media Queries
+****************************************************/
+
+@media only screen and (max-width: 550px) {
+  /* About */
+  #section0 > div.ui.fluid.container.about.fadein > div.ui.header.container {
+    margin-top: 2em !important;
+    margin-left: auto !important;
+  }
+
+  .h3.header > h3.ui.header {
+    width: 100%;
+    font-size: 0.8em;
+    /* margin-top: 10em; */
+  }
+
+  #section0 > #aboutMeBg {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 60%;
+  }
+
+  /* Contact */
+
+  #section2 .ui.fluid.container.contact {
+    width: 100% !important;
+    margin-left: auto !important;
+  }
+
+  #contactInfo h2.ui.header {
+    margin-top: 5% !important;
+  }
+
+  #contactInfo h2.info.ui.header {
+    width: 90%;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-bottom: none !important;
+  }
+  ul#email {
+    font-size: 0.8em;
+    /* margin-left: auto%; */
+  }
+
+  /* #infoList {
+    margin-left: auto%;
+  } */
+
+  .ui.contact img.contact.image {
+    left: 25%;
+    top: 15%;
+  }
+
+  .ui.icon.button,
+  .ui.icon.buttons .button {
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 700px) {
+  /* About */
+  .ui.header.container {
+    margin-top: 10em;
+  }
+
+  .h3.header > h3.ui.header {
+    width: 70%;
+    font-size: 0.8em;
+    /* margin-top: 10em; */
+  }
+
+  #aboutMeBg {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 60%;
+  }
+
+  /* Contact */
+
+  #section2 .ui.fluid.container.contact {
+    width: 80% !important;
+    margin-left: auto !important;
+  }
+
+  #contactInfo h2.ui.header {
+    margin-top: 3.5em !important;
+  }
+
+  #contactInfo h2.info.ui.header {
+    width: 100%;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-bottom: none !important;
+  }
+  ul#email {
+    font-size: 0.8em;
+  }
+
+  .ui.contact img.contact.image {
+    left: 26%;
+    top: 20%;
+    width: 50%;
+  }
+
+  .ui.icon.button,
+  .ui.icon.buttons .button {
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  /* About */
+  .ui.header.container {
+    margin-top: 5em;
+    width: 40%;
+    margin-left: 5% !important;
+  }
+
+  h2.ui.header {
+    width: 100%;
+  }
+
+  .h3.header > h3.ui.header {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  #aboutMeBg {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    width: 60%;
+  }
+
+  /* Contact */
+
+  #section2 .ui.fluid.container.contact {
+    width: 80% !important;
+    margin-left: auto !important;
+  }
+
+  #contactInfo h2.info.ui.header {
+    width: 100%;
+    font-size: 1.7em;
+    margin-left: auto;
+  }
+  ul#email {
+    font-size: 0.8em;
+  }
+
+  .ui.contact img.contact.image {
+    top: 35%;
+    width: 40%;
   }
 }
