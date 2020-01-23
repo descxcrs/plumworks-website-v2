@@ -4,7 +4,7 @@
   "description": "first portfolio site built with express",
   "main": "app.js",
   "scripts": {
-    "build": "netlify-lambda build express",
+    "build": "netlify-lambda build app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
