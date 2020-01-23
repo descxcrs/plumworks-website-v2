@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "fullpage.js": "^3.0.7",
     "heroku-ssl-redirect": "0.0.4",
+    "netlify-lambda": "^1.6.3",
     "serverless-http": "^2.3.0"
   }
 }
